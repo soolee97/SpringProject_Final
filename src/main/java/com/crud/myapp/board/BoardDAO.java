@@ -1,6 +1,7 @@
 package com.crud.myapp.board;
 import java.util.List;
 
+import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -8,38 +9,32 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class BoardDAO {
 	@Autowired
-	JdbcTemplate jdbcTemplate ;
+	SqlSession sqlSession ;
+	//JdbcTemplate jdbcTemplate ;
 	public int insertBoard(BoardVO vo) {
-		String sql = "insert into Week14BOARD (title, writer, category, content) values ("
-				+ "'" + vo.getTitle() + "',"
-				+ "'" + vo.getWriter() + "',"
-				+ "'" + vo.getCategory() + "',"
-				+ "'" + vo.getContent() + "')" ;
-		return jdbcTemplate.update(sql) ;
+		int result = sqlSession.insert("Board.insertBoard", vo) ;
+		return result ;
 	}
 
 	// 글 삭제
 	public int deleteBoard(int seq) {
-		String sql = "delete from Week14BOARD where seq = " + seq ;
-		return jdbcTemplate.update(sql) ;
+		int delete = sqlSession.delete("Board.deleteBoard", seq) ;
+		return delete ;
 	}
 
 	public int updateBoard(BoardVO vo) {
-		String sql = "update Week14BOARD set title = '" + vo.getTitle() + "',"
-				+ " category = '" + vo.getCategory() + "',"
-				+ " writer = '" + vo.getWriter() + "',"
-				+ " content = '" + vo.getContent() + "' where seq=" + vo.getSeq() ;
-		return jdbcTemplate.update(sql);
+		int update = sqlSession.update("Board.updateBoard", vo) ;
+		return update ;
 	}
 
 	public BoardVO getBoard(int seq) {
-		String sql = "select * from Week14BOARD where seq=" + seq ;
-		return jdbcTemplate.queryForObject(sql, new BoardRowMapper()) ;
+		BoardVO one = sqlSession.selectOne("Board.getBoard", seq) ;
+		return one ;
 	}
 
 	public List<BoardVO> getBoardList(){
-		String sql = "select * from Week14BOARD order by regdate desc" ;
-		return jdbcTemplate.query(sql, new BoardRowMapper()) ;
+		List<BoardVO> list = sqlSession.selectList("Board.getBoardList") ;
+		return list ;
 	}
 
 }

@@ -2,39 +2,32 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="SpringProject_2022.12.02:war exploded" />
+      <artifact name="SpringProject_2022.12.09:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd0c7cb6-dca9-48f9-9923-828ad5d62736" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/BoardDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/BoardRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/BoardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/BoardVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/JDBCUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addpost.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/deletepost.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addpostform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    <list default="true" id="bd0c7cb6-dca9-48f9-9923-828ad5d62736" name="Changes" comment="Week14">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/util/LoginCheckInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/board-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/img/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/img/snowman.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ef4e2b5f-549a-4c91-9de6-2f1ff57d80cc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ef4e2b5f-549a-4c91-9de6-2f1ff57d80cc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/crud/myapp/board/BoardDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +37,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
+        <option value="FxmlFile" />
         <option value="Interface" />
-        <option value="Class" />
+        <option value="spring-beans.schema" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,7 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/doulo/IdeaProjects/SpringProject_2022.12.02/src/main/java/com/crud/myapp/board",
+    "last_opened_file_path": "C:/Users/doulo/IdeaProjects/SpringProject_2022.12.09",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,7 +80,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "7029a24e294820263ee974b04878c76f"
+    "spring.configuration.checksum": "ae26e39d1706f8bbba9e6e5b25bcd42f"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -95,6 +89,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.crud.myapp.board" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\doulo\IdeaProjects\SpringProject_2022.12.02\src\main\java\com\crud\myapp\board" />
       <recent name="C:\Users\doulo\IdeaProjects\SpringProject_2022.12.02\src\main\webapp\WEB-INF\views" />
@@ -102,9 +99,11 @@
       <recent name="C:\Users\doulo\IdeaProjects\SpringProject_2022.12.02\src\main\java\com\example" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\doulo\IdeaProjects\SpringProject_2022.12.09\src\main\webapp\resources\img" />
+      <recent name="C:\Users\doulo\IdeaProjects\SpringProject_2022.12.09\src\main\webapp\resources" />
+      <recent name="C:\Users\doulo\IdeaProjects\SpringProject_2022.12.09\src\main\resources\img" />
+      <recent name="C:\Users\doulo\IdeaProjects\SpringProject_2022.12.09\src\main\webapp\WEB-INF\views" />
       <recent name="C:\Users\doulo\IdeaProjects\SpringProject_2022.12.02\src\main\webapp\WEB-INF\views" />
-      <recent name="C:\Users\doulo\IdeaProjects\SpringProject_2022.12.02\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\doulo\IdeaProjects\SpringProject_2022.12.02\src\main\webapp\WEB-INF\views\board" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example" />
@@ -114,14 +113,14 @@
     <configuration name="Tomcat 9.0.69" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.69" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="SpringProject_2022.12.02:war exploded">
+        <artifact name="SpringProject_2022.12.09:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/SpringProject_2022_12_02_war_exploded" />
+            <option name="CONTEXT_PATH" value="/SpringProject_2022_12_09_war_exploded" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="095eb99a-cbe7-409a-9bad-7ffb446b2bf1" />
+        <option name="BASE_DIRECTORY_NAME" value="aa2bdef4-2673-4160-a572-e76e6e0a8d2d" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -129,7 +128,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="64652" />
+        <option name="DEBUG_PORT" value="51114" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -194,7 +193,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="SpringProject_2022.12.02:war exploded" />
+          <artifact name="SpringProject_2022.12.09:war exploded" />
         </option>
       </method>
     </configuration>
@@ -209,8 +208,26 @@
       <updated>1669964967292</updated>
       <workItem from="1669964968767" duration="4515000" />
       <workItem from="1669978383398" duration="19855000" />
-      <workItem from="1670032590654" duration="14135000" />
+      <workItem from="1670032590654" duration="15601000" />
+      <workItem from="1670563017107" duration="58000" />
+      <workItem from="1670570000302" duration="22000" />
+      <workItem from="1670570068121" duration="8191000" />
     </task>
+    <task id="LOCAL-00001" summary="Week14">
+      <created>1670056576060</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670056576061</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Week14">
+      <created>1670056794770</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670056794770</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,5 +243,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Week14" />
+    <option name="LAST_COMMIT_MESSAGE" value="Week14" />
   </component>
 </project>

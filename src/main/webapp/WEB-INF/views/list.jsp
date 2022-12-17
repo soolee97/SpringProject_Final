@@ -25,8 +25,37 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #006bb3;
+  background-color: chocolate;
   color: white;
+}
+#btn_group button{
+	border-radius: 5px;
+	border : 2px chocolate;
+	background-color : #f2f2f2;
+	color: chocolate;
+	padding : 5px ;
+	font-size : medium;
+}
+#btn_group button:hover{
+	color:white ;
+	background-color: chocolate;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+a:visited{
+	text-decoration: none;
+	color:black;
+}
+a:hover{
+	text-decoration: none;
+	font-weight: bolder;
+	color:chocolate;
+}
+a:active{
+	text-decoration: none;
 }
 </style>
 <script>
@@ -37,7 +66,13 @@
 </script>
 </head>
 <body>
-<h1>BOARD</h1>
+
+<h1>
+	<img src='../resources/img/coffee_cup.png' height="40">
+	My Coffee List
+	<img src='../resources/img/coffee_cup.png' height="40">
+</h1>
+
 <%--
 	BoardDAO boardDAO = new BoardDAO();
 	List<BoardVO> list = boardDAO.getBoardList();
@@ -47,10 +82,14 @@
 <tr>
 	<th>Id</th>
 	<th>Category</th>
-	<th>Title</th>
-	<th>Writer</th>
+	<th>Sold Out</th>
+	<th>Menu Name(kor)</th>
+	<th>Menu Name(eng)</th>
+	<th>ICE/HOT</th>
+	<th>Price</th>
 	<th>Content</th>
-	<th>Regdate</th>
+	<th>Take-Out</th>
+	<th>Update Date</th>
 	<th>Edit</th>
 	<th>Delete</th>
 </tr>
@@ -58,16 +97,24 @@
 	<tr>
 		<td>${u.seq}</td>
 		<td>${u.category}</td>
-		<td>${u.title}</td>
-		<td>${u.writer}</td>
+		<td>${u.soldout}</td>
+		<td>${u.menu_name}</td>
+		<td>${u.menu_name_eng}</td>
+		<td>${u.ice_hot}</td>
+		<td>${u.price}</td>
 		<td>${u.content}</td>
+		<td>${u.takeout}</td>
 		<td>${u.regdate}</td>
 		<td><a href="editform/${u.seq}">Edit</a></td>
 		<td><a href="deleteok/${u.seq}">Delete</a></td>
 	</tr>
 </c:forEach>
 </table>
-<br/><a href = "add">Add New Post</a>
-<a href = "../login/logout">Log out</a>
+<br>
+<div id = "btn_group">
+<button type = "button" onclick="location.href = 'add'">Add New Menu</button>
+<button type = "button" onclick = "location.href='../login/logout'">Log Out</button>
+</div>
+
 </body>
 </html>

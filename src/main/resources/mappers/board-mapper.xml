@@ -2,13 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Board">
     <insert id="insertBoard">
-        insert into BOARD (category, title, writer, content)
+        insert into BOARD (category, menu_name, menu_name_eng, ice_hot,price, content, takeout, soldout)
         values
-        (#{category} , #{title} , #{writer} , #{content})
+        (#{category} , #{menu_name}, #{menu_name_eng},#{ice_hot} , #{price} , #{content}, #{takeout}, #{soldout})
     </insert>
     <update id="updateBoard">
         update BOARD
-        set title=#{title}, content=#{content}, writer=#{writer}, category=#{category}
+        set menu_name=#{menu_name}, menu_name_eng=#{menu_name_eng}, ice_hot=#{ice_hot}, content=#{content}, price=#{price}, category=#{category}, takeout=#{takeout}, soldout=#{soldout}
         where seq=#{seq}
     </update>
     <delete id="deleteBoard">
